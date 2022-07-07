@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_btn_save_btn_bg"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="22dp"
+    android:elevation="8dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/dashboard_service_sales_item_bg"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/services_provider_profile_pic"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:maxWidth="100dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/services_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:text="Title for the service provider"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/services_provider_profile_pic"
+            app:layout_constraintTop_toTopOf="@+id/services_provider_profile_pic" />
+
+        <TextView
+            android:id="@+id/no_of_ratings_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ratings"
+            android:layout_marginStart="6dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/service_got_ratings"
+            app:layout_constraintStart_toEndOf="@+id/service_got_ratings"
+            app:layout_constraintTop_toTopOf="@+id/service_got_ratings" />
+
+        <RatingBar
+            android:id="@+id/service_got_ratings"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="#FFCC01"
+            android:layout_marginTop="6dp"
+            android:rating="3"
+            app:layout_constraintStart_toStartOf="@+id/services_title"
+            app:layout_constraintTop_toBottomOf="@+id/services_title" />
+
+        <TextView
+            android:id="@+id/provider_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Aurangabad"
+            android:drawableStart="@drawable/location_pin_24"
+            android:drawableTint="@color/main_blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/service_got_ratings"
+            app:layout_constraintTop_toBottomOf="@+id/service_got_ratings" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

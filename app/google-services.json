@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "260952978353",
+    "firebase_url": "https://pawpaw-4068b-default-rtdb.firebaseio.com",
+    "project_id": "pawpaw-4068b",
+    "storage_bucket": "pawpaw-4068b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260952978353:android:cf7a9263e9f8e91afa0390",
+        "android_client_info": {
+          "package_name": "com.garudpuran.pawpawadm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260952978353-fuev1maanr6q3f7nsi6t8dpu2hp2qq4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTEm1hl9SaTnu9ASqrJI4QGZ_-Wxeh4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260952978353-fuev1maanr6q3f7nsi6t8dpu2hp2qq4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260952978353:android:bdd289eb3d831b50fa0390",
+        "android_client_info": {
+          "package_name": "com.pawpaw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260952978353-f9l60444sqksk1i2p56d6d2n9s205b6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pawpaw",
+            "certificate_hash": "fef53d9c76e29a8b99a8b115ab3f5cc72863c9d0"
+          }
+        },
+        {
+          "client_id": "260952978353-fuev1maanr6q3f7nsi6t8dpu2hp2qq4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTEm1hl9SaTnu9ASqrJI4QGZ_-Wxeh4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260952978353-fuev1maanr6q3f7nsi6t8dpu2hp2qq4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

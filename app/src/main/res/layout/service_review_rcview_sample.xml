@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+android:background="@drawable/profile_btn_save_btn_bg"
+app:cardCornerRadius="22dp"
+android:elevation="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/dashboard_service_sales_item_bg"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sales_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:padding="4dp"
+            android:text="User Name"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profilePic"
+            app:layout_constraintTop_toTopOf="@+id/profilePic" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="23 Nov 2021"
+            android:textSize="16sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/sales_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sales_title" />
+
+        <RatingBar
+            android:id="@+id/sales_got_ratings"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="#FFCC01"
+            android:layout_marginTop="10dp"
+            android:rating="3"
+            app:layout_constraintStart_toStartOf="@+id/sales_title"
+            app:layout_constraintTop_toBottomOf="@+id/sales_title" />
+
+        <TextView
+            android:id="@+id/rating_description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="great service"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/sales_got_ratings"
+            app:layout_constraintTop_toBottomOf="@+id/sales_got_ratings" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

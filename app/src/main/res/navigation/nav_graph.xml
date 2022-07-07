@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_createOrSelectSquareFragment"
+            app:destination="@id/createOrSelectSquareFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.ServicesFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_services">
+        <action
+            android:id="@+id/action_servicesFragment_to_selectedServicesDetailFragment"
+            app:destination="@id/selectedServicesDetailFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_addServiceFragment"
+            app:destination="@id/addServiceFragment" />
+        <argument android:name="serviceType" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedServicesDetailFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.SelectedServicesDetailFragment"
+        android:label="fragment_selected_services_detail"
+        tools:layout="@layout/fragment_selected_services_detail">
+        <argument
+            android:name="serviceId"
+            app:argType="string" />
+        <argument
+            android:name="typeOfService"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addServiceFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.AddServiceFragment"
+        android:label="fragment_add_service"
+        tools:layout="@layout/fragment_add_service">
+        <argument
+            android:name="serviceType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createOrSelectSquareFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.CreateOrSelectSquareFragment"
+        android:label="fragment_create_or_select_square"
+        tools:layout="@layout/fragment_create_or_select_square">
+        <argument
+            android:name="typeOfSquare"
+            android:defaultValue="notSelected"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.SalesFragment"
+        android:label="fragment_sales"
+        tools:layout="@layout/fragment_sales">
+        <action
+            android:id="@+id/action_salesFragment_to_salesDetailFragment"
+            app:destination="@id/salesDetailFragment" />
+        <action
+            android:id="@+id/action_salesFragment_to_addSalesFragment"
+            app:destination="@id/addSalesFragment" />
+        <argument android:name="salesType" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesDetailFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.SalesDetailFragment"
+        android:label="fragment_sales_detail"
+        tools:layout="@layout/fragment_selected_sales_detail" >
+
+        <argument
+            android:name="salesId"
+            app:argType="string" />
+        <argument
+            android:name="typeOfSales"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSalesFragment"
+        android:name="com.garudpuran.pawpawadm.fragments.AddSalesFragment"
+        android:label="fragment_add_sales"
+        tools:layout="@layout/fragment_add_sales" />
+</navigation>
